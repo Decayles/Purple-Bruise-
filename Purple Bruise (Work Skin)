@@ -1,0 +1,44 @@
+================CSS=========================================================================#workskin .bruised-frame {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 40px 25px 35px 25px;
+  background-color: #231b24;
+  background-image: radial-gradient(circle at 15% 20%, rgba(75, 0, 130, 0.35) 0%, transparent 40%),
+    radial-gradient(circle at 85% 75%, rgba(138, 43, 226, 0.25) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(178, 34, 34, 0.2) 0%, transparent 60%);
+  color: #e2d7e5;
+  border: 1px solid #4a2e4b;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8), 0 0 10px rgba(75, 0, 130, 0.3);
+  position: relative;
+}
+
+#workskin .bruised-frame::after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  background-color: #231b24;
+  padding: 0 8px;
+  filter: hue-rotate(240deg) brightness(0.7) opacity(0.85);
+}
+
+#workskin .bruised-frame p {
+  line-height: 1.7;
+  margin-bottom: 1.2em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+#workskin .bruised-frame h3 {
+  text-align: center;
+  color: #b89ec9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #4a2e4b;
+  padding-bottom: 8px;
+}
+================HTML========================================================================<div class="bruised-frame">
+<p align="left">INSERT TEXT HERE.</p>
+</div>
